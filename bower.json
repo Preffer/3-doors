@@ -1,0 +1,11 @@
+{
+	"name": "3-doors",
+	"version": "0.0.1",
+	"homepage": "http://blog.pillowsky.org",
+	"license": "Apache License",
+	"private": true,
+	"dependencies": {
+		"normalize.css": "x",
+		"jquery": "x"
+	}
+}
