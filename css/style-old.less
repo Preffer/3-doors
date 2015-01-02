@@ -1,8 +1,7 @@
 @red: #591124;
-@green: #88FFE0;
+@green: #58FED2;
 @border: #999;
 @inner: #333;
-@blue: #529ECC;
 
 .font-hei {
 	font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
@@ -11,65 +10,6 @@
 	font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", serif;
 }
 
-@media (orientation:portrait) {
-	div#portrait{
-		position: absolute;
-		width: 80vw;
-		left: 10vw;
-		height: 28vh;
-		background-color: @blue;
-		border-radius: 0.5rem;
-		-webkit-animation: portrait-down 1s ease 0 1 forwards;
-		p#question{
-			font-size: 5vh;
-			color: white;
-			text-align: center;
-			margin-bottom: 4vh;
-		}
-		div#buttonGroup{
-			text-align: center;
-			div.button{
-				display: inline-block;
-				font-size: 4vh;
-				margin: 0 6vw;
-				padding: 1vh 2vw;
-				color: @green;
-				border: 3px solid @green;
-				border-radius: 0.4rem;
-				transition: all 0.4s;
-				&:active{
-					color: white;
-					background-color: @green;
-				}
-			}
-		}
-		div#tip{
-			display: none;
-			font-size: 4vh;
-			color: white;
-			text-align: center;
-			p {
-				line-height: 2vh;
-			}
-		}
-	}
-	@-webkit-keyframes portrait-down {
-		from {
-			top: -30vh;
-			opacity: 0.5;
-		}
-		to {
-			top: 25vh;
-			opacity: 1;
-		}
-	}
-}
-
-@media (orientation:landscape) {
-	div#portrait{
-		display: none;
-	}
-}
 body{
 	background-image: url(../img/bg.jpg);
 	background-size: cover;

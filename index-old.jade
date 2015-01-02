@@ -1,0 +1,42 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+		meta(name="renderer" content="webkit")
+		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+		title 3-Doors
+		link(rel="stylesheet" href="bower_components/normalize.css/normalize.css")
+		link(rel="stylesheet" href="css/style.css")
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="js/script.js")
+
+	body.font-hei
+		div.doors
+			div.door(index="0")
+				div.swing
+					p A
+					p#tip 选我选我
+
+			div.door(index="1")
+				div.swing
+					p B
+					p#tip 选我选我
+			div.door(index="2")
+				div.swing
+					p C
+					p#tip 选我选我
+		div#alert
+			p 你面前有三扇门
+			p 有一扇门是喜剧，两扇门是悲剧
+			p 请打开一扇门
+			div#know 知道了
+		
+		div#confirm
+			p#select
+			p#wrong
+			p 你现在有一次改变主意的机会
+			div.option#stick 不改，选A门
+			div.option#switch 改，选B门
+
+		div#mask
