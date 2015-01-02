@@ -34,9 +34,9 @@ $ ->
 		window.times++
 
 firstChoice = (self)->
-	$(self).addClass('door-selected')
 	clearInterval(window.shakeHandler)
 	$('div#doorGroup p.cute').fadeOut(500)
+	$(self).addClass('door-selected')
 
 	window.select = Number($(self).attr('index'))
 	window.answer = window.secret.pop()
@@ -50,7 +50,7 @@ firstChoice = (self)->
 		window.suggest = window.answer
 
 	$('div#confirm p#feedback').text(
-		"你选了#{window.names[window.select]}门 我可以确定#{window.names[window.wrong]}门一定不对"
+		"你选了#{window.names[window.select]}门，但我可以确定#{window.names[window.wrong]}门一定不对"
 	)
 	$('div#landscape div#confirm').addClass('confirm-up')
 
