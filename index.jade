@@ -9,6 +9,7 @@ html
 		link(rel="stylesheet" href="bower_components/normalize.css/normalize.css")
 		link(rel="stylesheet" href="css/style.css")
 		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="bower_components/jquery-ui/jquery-ui.min.js")
 		script(src="js/script.js")
 
 	body.font-hei
@@ -21,3 +22,31 @@ html
 				p 思思原来这么肥！！
 				p 那快把屏幕转过来
 				p 竖着放不下思思
+
+		div#landscape
+			div#doorGroup
+				div.door(index = "0")
+					div.swing
+						p.name A
+						p.cute 选我选我~
+
+				div.door(index = "1")
+					div.swing
+						p.name B
+						p.cute 选我选我~
+
+				div.door(index = "2")
+					div.swing
+						p.name C
+						p.cute 选我选我~
+
+			div#rule
+				p
+					big 你面前有三扇门
+				p 有一扇门是喜剧，两扇门是悲剧
+				p 请打开一扇门
+				div#know 明白了
+
+			div#confirm
+				p#feedback
+				p 现在，给你再选一次的机会

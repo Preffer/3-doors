@@ -6,6 +6,7 @@
 	"private": true,
 	"dependencies": {
 		"normalize.css": "x",
-		"jquery": "x"
+		"jquery": "x",
+		"jquery-ui": "x"
 	}
 }
